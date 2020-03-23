@@ -2,6 +2,18 @@
 
 ``pacwall.sh`` is a shell script that changes your wallpaper to the dependency graph of installed by ``pacman`` packages. Each package is a node and each edge indicates a dependency between two packages. The explicitly installed packages have a distinct color (orange by default).
 
+-----------------------
+Installing as a package
+-----------------------
+
+Grab the PKGBUILD and run
+
+.. code-block:: bash
+
+    $ makepkg -si
+
+``makepkg`` downloads the source code and the dependencies automatically, so you don't need to clone the repo or intstall the dependencies listed below.
+
 ------------
 Requirements
 ------------
